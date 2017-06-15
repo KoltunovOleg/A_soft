@@ -34,7 +34,7 @@ $(document).ready(function () {
 
       // 3 Output comment
       var comment = $("textarea[name='comment']").val();
-      $("<li class='comments-list_item'><div class='info-holder'><div class='name'>Гость</div><time><span class='data-day'>" + day + "</span><span class='data-month'> " + fMonth + " </span><span class='data-year'>" + year + "</span></time></div><div class='comment-box'>" + comment + "</div><div class='triangle'></div></li>")
+      $("<li class='comments-list_item'><div class='info-holder'><div class='name'>Гость</div><time><span class='data-day'>" + day + "</span><span class='data-month'> " + fMonth + " </span><span class='data-year'>" + year + "</span></time></div><div class='comment-box'><p>" + comment + "</p></div><div class='triangle'></div></li>")
         .appendTo(".js-comments-list");
       $("textarea[name='comment']").val('');
     };
